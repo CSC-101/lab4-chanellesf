@@ -15,7 +15,6 @@ def first_element(list : list[list[int]]) -> list:
 # This function x_coordinates takes in one parameter of type list[Point]
 # This function will return a list containing the x-coordinate
 # of each point in the input list.
-
 def x_coordinates(points : list[data.Point]) -> list[data.Point]:
     return [i.x for i in points]
 
@@ -33,7 +32,7 @@ def distance(a : data.Point, b : data.Point) -> float:
     return math.sqrt((b.x - a.x)**2 + (b.y - a.y)**2)
 
 # Part 5
-# This function manhattan_distance takes two argument of type Point
+# This function manhattan_distance takes two arguments of type Point
 # and returns the Manhattan distance between them.
 def manhattan_distance(a : data.Point, b : data.Point) -> float:
     return abs(b.x - a.x) + abs(b.y - a.y)

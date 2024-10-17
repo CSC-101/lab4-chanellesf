@@ -87,8 +87,8 @@ class TestCases(unittest.TestCase):
         result = lab4.manhattan_distance(a,b)
         expected = 166.8
         self.assertEqual(result, expected)
-# Part 6
 
+# Part 6
     def test_distance_all_1(self):
         a = data.Point(6.9, 69)
         b = data.Point(-30.7, -80.1)
