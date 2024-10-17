@@ -15,7 +15,7 @@ def first_element(list : list[list[int]]) -> list:
 # This function x_coordinates takes in one parameter of type list[Point]
 # This function will return a list containing the x-coordinate
 # of each point in the input list.
-def x_coordinates(points : list[data.Point]) -> list[data.Point]:
+def x_coordinates(points : list[data.Point]) -> list[float]:
     return [i.x for i in points]
 
 # Part 3
