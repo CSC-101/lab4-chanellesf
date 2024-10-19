@@ -64,14 +64,14 @@ class TestCases(unittest.TestCase):
         b = data.Point(5, 15)
         result = lab4.distance(a,b)
         expected = 21.21
-        self.assertEqual(round(result,2), expected)
+        self.assertAlmostEqual(result, expected, 2)
 
     def test_distance_2(self):
         a = data.Point(-17, 2)
         b = data.Point(3, 8.2)
         result = lab4.distance(a,b)
         expected = 20.94
-        self.assertEqual(round(result,2), expected)
+        self.assertAlmostEqual(result, expected, 2)
 
     # Part 5
     def test_manhattan_distance_1(self):
